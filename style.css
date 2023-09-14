@@ -10,7 +10,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* navbar */
 
 .navbar {
   position: sticky;
@@ -21,18 +20,17 @@ body::-webkit-scrollbar {
   width: 1200px;
   margin-right: 50px;
   transition: all 0.7s ease;
+  border-bottom: 2px solid #fffadd;
 }
 
 .opacity {
   opacity: 0;
-  /* display: none; */
 }
 
 .big_navbar {
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #fffadd;
 }
 
 .navbar svg {
@@ -72,10 +70,10 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
-/* main */
 
 .main {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-flow: wrap column;
@@ -152,12 +150,20 @@ body::-webkit-scrollbar {
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 120% */
+  line-height: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.main_description p:last-child span:last-child {
+hr {
+  width: 90%;
+  height: 2px;
+  display: block;
+  background-color: red;
+  color: red;
+}
+
+ .main_description p:last-child span:last-child {
   width: 85px;
   flex-shrink: 0;
   color: #000;
@@ -165,10 +171,10 @@ body::-webkit-scrollbar {
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
-  line-height: 12px; /* 120% */
+  line-height: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
+} 
 
 /* blogs 1*/
 
@@ -673,3 +679,4 @@ table thead tr th p{
   align-self: flex-end;
   margin: 0 aut;
 }
+
